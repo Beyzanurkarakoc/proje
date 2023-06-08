@@ -1,0 +1,51 @@
+import pandas as pd
+
+from Insan import Insan
+from Issiz import Issiz
+from Calisan import Calisan
+from MaviYaka import MaviYaka
+from BeyazYaka import BeyazYaka
+
+if __name__ == "__main__":
+    # Insan nesneleri oluşturuluyor
+    insan1 = Insan("12345678900", "Ahmet", "Yılmaz", 30, "Erkek", "Türk")
+    insan2 = Insan("98765432100", "Ayşe", "Demir", 25, "Kadın", "Türk")
+
+    print(insan1)
+    print(insan2)
+
+    # Issiz nesneleri oluşturuluyor
+    issiz1 = Issiz("11111111111", "Ali", "Kara", 35, "Erkek", "Türk", "mavi yaka", {"mavi yaka": 5, "beyaz yaka": 8, "yönetici": 10})
+    issiz2 = Issiz("22222222222", "Ayşe", "Yeşil", 28, "Kadın", "Türk", "yönetici", {"mavi yaka": 3, "beyaz yaka": 5, "yönetici": 8})
+    issiz3 = Issiz("33333333333", "Mehmet", "Sarı", 40, "Erkek", "Türk", "beyaz yaka", {"mavi yaka": 4, "beyaz yaka": 6, "yönetici": 9})
+
+    print(issiz1)
+    print(issiz2)
+    print(issiz3)
+
+    # Calisan nesneleri oluşturuluyor
+    calisan1 = Calisan("44444444444", "Ahmet", "Kaya", 32, "Erkek", "Türk","mavi yaka", "teknoloji", 3, 12000)
+    calisan2 = Calisan("55555555555", "Ayşe", "Çelik", 27, "Kadın", "Türk","beyaz yaka", "muhasebe", 5, 16000)
+    calisan3 = Calisan("66666666666", "Mehmet", "Demir", 42, "Erkek", "Türk","mavi yaka", "insan kaynakları", 10, 25000)
+
+    print(calisan1)
+    print(calisan2)
+    print(calisan3)
+
+    # MaviYaka nesneleri oluşturuluyor
+    mavi_yaka1 = MaviYaka("77777777777", "Ali", "Kara", 38, "Erkek", "Türk","mavi yaka", "teknoloji", 3, 12000, 2000)
+    mavi_yaka2 = MaviYaka("88888888888", "Ayşe", "Yeşil", 31, "Kadın", "Türk","mavi yaka", "muhasebe", 5, 16000, 3000)
+    mavi_yaka3 = MaviYaka("99999999999", "Mehmet", "Sarı", 45, "Erkek", "Türk","mavi yaka", "insan kaynakları", 10, 25000, 5000)
+
+    print(mavi_yaka1)
+    print(mavi_yaka2)
+    print(mavi_yaka3)
+
+    # BeyazYaka nesneleri oluşturuluyor
+    beyaz_yaka1 = BeyazYaka("10101010101", "Ali", "Kara", 36, "Erkek", "Türk","beyaz yaka", "teknoloji", 3, 12000, 1000)
+    beyaz_yaka2 = BeyazYaka("12121212121", "Ayşe", "Yeşil", 29, "Kadın", "Türk","beyaz yaka", "muhasebe", 5, 16000, 1500)
+    beyaz_yaka3 = BeyazYaka("13131313131", "Mehmet", "Sarı", 43, "Erkek", "Türk","beyaz yaka", "insan kaynakları", 10, 25000, 2000)
+
+    print(beyaz_yaka1)
+    print(beyaz_yaka2)
+    print(beyaz_yaka3)
