@@ -1,0 +1,26 @@
+from Insan import Insan
+class Issiz(Insan):
+    def __init__(self, tc_no, ad, soyad, yas, cinsiyet, uyruk, status, tecrube):
+        super().__init__(tc_no, ad, soyad, yas, cinsiyet, uyruk)
+        self.__status = status
+        self.__tecrube = tecrube
+
+    def get_status(self):
+        return self.__status
+
+    def set_status(self, status):
+        self.__status = status
+
+    def get_tecrube(self):
+        return self.__tecrube
+
+    def set_tecrube(self, tecrube):
+        self.__tecrube = tecrube
+
+    def statu_bul(self):
+        statuler = {"mavi yaka": 0.2, "beyaz yaka": 0.35, "yönetici": 0.45}
+        en_uygun_statu = max(statuler, key=statuler.get)
+        self.__status = en_uygun_statu
+
+    def __str__(self):
+        return super().__str__() + f"\nStatus: {self.__status}\nTecrübe: {self.__tecrube} yıl"
